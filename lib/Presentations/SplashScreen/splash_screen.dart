@@ -36,8 +36,8 @@ class SplashScreen extends StatelessWidget {
         }),
             Positioned(
               bottom: 300,
-              left: 30,
-              child: Text('Manage your \ndaily tasks',
+              left: 60,
+              child: Text('Your Passport to \nFitness Success!',
               style: context.headlineLarge!.copyWith(fontSize: 40.sp),),
             )
 
