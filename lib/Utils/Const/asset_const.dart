@@ -18,6 +18,7 @@ class ImageConst {
  ///images
   static String splash = "${image}splash.png";
   static String background = "${image}background.png";
+  static String user = "${image}user.png";
 
 
 

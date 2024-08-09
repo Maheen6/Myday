@@ -54,17 +54,17 @@ class MyApp extends StatelessWidget {
                 // Title
                 titleLarge: TextStyle(
                   fontSize: 18.sp,
-                  color: const Color(0xFF242424),
+                  color: white,
                   fontWeight: FontWeight.bold,
                 ),
                 titleMedium: TextStyle(
                   fontSize: 16.sp,
-                  color: const Color(0xFF242424),
+                  color: white,
                   fontWeight: FontWeight.bold,
                 ),
                 titleSmall: TextStyle(
                   fontSize: 14.sp,
-                  color: const Color(0xFF242424),
+                  color: white,
                   fontWeight: FontWeight.bold,
                 ),
 
