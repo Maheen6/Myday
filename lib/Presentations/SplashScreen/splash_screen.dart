@@ -16,15 +16,11 @@ class SplashScreen extends StatelessWidget {
     final SplashController splashController = Get.put(SplashController());
 
     return Scaffold(
+      backgroundColor: Color(0xffFFFCE3),
       body: SafeArea(
-        child: Stack(
+        child: Column(
           children: [
-            Image.asset(
-              ImageConst.background,
-              height: 1.sh,
-              width: 1.sw,
-              fit: BoxFit.fill,
-            ),
+
             Obx(() {
               return AnimatedScale(
                 scale: splashController.isScale.value ? 0.8 : 0.5,
@@ -35,33 +31,28 @@ class SplashScreen extends StatelessWidget {
                 ),
               );
             }),
-            Positioned(
-              bottom: 300,
-              left: 60,
-              child: Text(
-                'Your Passport to \nFitness Success!',
-                style: context.headlineLarge!.copyWith(fontSize: 40.sp),
+            50.verticalSpace,
+            Text(
+              'Craft a Detailed \nPlan for Your Day',
+              style: context.headlineLarge!.copyWith(fontSize: 40.sp),
+            ),
+            Spacer(),
+            GradientSlideToAct(
+              text: 'Slide to Start',
+              dragableIconBackgroundColor: Colors.blue.withOpacity(0.4),
+              onSubmit: () {
+                Get.toNamed(AppRoutes.home);
+              },
+              backgroundColor: const Color(0xFF00275c).withOpacity(0.3),
+              gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                colors: [
+                  const Color(0xFF00275c),
+                  Colors.blue.withOpacity(0.4)
+                ]
               ),
             ),
-            Positioned(
-                bottom: 100,
-                left: 60,
-                right: 60,
-                child: GradientSlideToAct(
-                  text: 'Slide to Start',
-                  dragableIconBackgroundColor: Colors.blue.withOpacity(0.4),
-                  onSubmit: () {
-                    Get.toNamed(AppRoutes.home);
-                  },
-                  backgroundColor: const Color(0xFF00275c).withOpacity(0.3),
-                  gradient: LinearGradient(
-                    begin: Alignment.centerLeft,
-                    colors: [
-                      const Color(0xFF00275c),
-                      Colors.blue.withOpacity(0.4)
-                    ]
-                  ),
-                )),
+            180.verticalSpace,
           ],
         ),
       ),

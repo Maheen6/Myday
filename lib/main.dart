@@ -54,41 +54,41 @@ class MyApp extends StatelessWidget {
                 // Title
                 titleLarge: TextStyle(
                   fontSize: 18.sp,
-                  color: white,
+                  color: black,
                   fontWeight: FontWeight.bold,
                 ),
                 titleMedium: TextStyle(
                   fontSize: 16.sp,
-                  color: white,
+                  color: black,
                   fontWeight: FontWeight.bold,
                 ),
                 titleSmall: TextStyle(
                   fontSize: 14.sp,
-                  color: white,
+                  color: black,
                   fontWeight: FontWeight.bold,
                 ),
 
                 ///Body text are all regular weight use title if bold is needed
-                bodyLarge: TextStyle(
-                  fontSize: 18.sp,
-                  color: const Color(0xFF242424),
-                  fontWeight: FontWeight.normal,
-                ),
-                bodyMedium: TextStyle(
-                  fontSize: 16.sp,
-                  color: const Color(0xFFFFFFFF),
-                  fontWeight: FontWeight.normal,
-                ),
-                bodySmall: TextStyle(
-                  fontSize: 14.sp,
-                  color: const Color(0xFF242424),
-                  fontWeight: FontWeight.normal,
-                ),
+                // bodyLarge: TextStyle(
+                //   fontSize: 18.sp,
+                //   color: const Color(0xFF242424),
+                //   fontWeight: FontWeight.normal,
+                // ),
+                // bodyMedium: TextStyle(
+                //   fontSize: 16.sp,
+                //   color: black,
+                //   fontWeight: FontWeight.normal,
+                // ),
+                // bodySmall: TextStyle(
+                //   fontSize: 14.sp,
+                //   color: const Color(0xFF242424),
+                //   fontWeight: FontWeight.normal,
+                // ),
 
                 /// Label
                 labelLarge: TextStyle(
                   fontSize: 12.sp,
-                  color: Colors.white,
+                  color: black,
                   fontWeight: FontWeight.bold,
                 ),
                 labelMedium: TextStyle(
@@ -98,7 +98,7 @@ class MyApp extends StatelessWidget {
                 ),
                 labelSmall: TextStyle(
                   fontSize: 12.sp,
-                  color: Colors.white,
+                  color: black,
                   fontWeight: FontWeight.normal,
                 ),
               ),

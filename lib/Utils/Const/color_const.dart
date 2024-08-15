@@ -26,11 +26,11 @@ List<BoxShadow> boxShadow = [
   ),
 ];
 
-LinearGradient gradientYellow = const LinearGradient(
-  begin: Alignment.topCenter,
-  end: Alignment.bottomCenter,
-  colors: [Color(0xffE4BB49), Color(0xffAB7D01)],
-);
+// LinearGradient gradientYellow = const LinearGradient(
+//   begin: Alignment.topCenter,
+//   end: Alignment.bottomCenter,
+//   colors: [Color(0xffE4BB49), Color(0xffAB7D01)],
+// );
 
 LinearGradient gradientBackground = const LinearGradient(
     begin: Alignment.topCenter,
